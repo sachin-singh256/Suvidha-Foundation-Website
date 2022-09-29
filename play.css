@@ -1,0 +1,75 @@
+ .play {
+     width: 50%;
+     height: 400px;
+     background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .play ion-icon {
+     color: #fff;
+     font-size: 50px;
+     padding: 50px;
+     border-radius: 50%;
+     cursor: pointer;
+     position: relative;
+ }
+
+ .play ion-icon:before {
+     content: '';
+     position: absolute;
+     border: 15px solid rgb(249, 173, 0);
+     border-radius: 50%;
+     top: 0px;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
+     animation: animate 1.5s linear infinite;
+     opacity: 0;
+ }
+
+ .play ion-icon:after {
+     content: '';
+     position: absolute;
+     border: 15px solid #fff;
+     border-radius: 50%;
+     top: 0px;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
+     animation: animated 1.5s linear infinite;
+     opacity: 0;
+     animation-delay: .6s;
+ }
+
+ @keyframes animate {
+     0% {
+         transform: scale(.5);
+     }
+
+     50% {
+         opacity: 1;
+     }
+
+     100% {
+         transform: scale(1.5);
+     }
+ }
+
+ @keyframes animated {
+     0% {
+         transform: scale(.5);
+     }
+
+     50% {
+         opacity: 1;
+     }
+
+     100% {
+         transform: scale(1.5);
+     }
+ }
+

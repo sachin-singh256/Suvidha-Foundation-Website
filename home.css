@@ -1,0 +1,64 @@
+@import url(./variable.css);
+
+.home {
+    padding-top: 0;
+}
+
+.home .home-slider {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-top: 0;
+}
+
+.home .home-slider .box {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    opacity: .8;
+    min-height: 50rem;
+    position: relative;
+}
+
+.home .home-slider .box .content {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .section-subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.main-heading {
+    color: var(--white);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-9);
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.home .section-text {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    color: var(--white);
+
+}
+
+.home-btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: animate 20s 1;
+}

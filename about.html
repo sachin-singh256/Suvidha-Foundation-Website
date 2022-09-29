@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suvidha Foundation About Us</title>
+  <link rel="shortcut icon" type="image" href="./assets/images/Others/suvidha_title_logo.png" />
+
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/media_queries.css" />
+  <link rel="stylesheet" href="./assets/css/animation.css" />
+  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="./assets/css/play.css">
+  <link rel="stylesheet" href="./assets/css/front_page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/contactstyle.css" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+
+  <!-- google font link -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- loader  -->
+
+  <div class="loader-container">
+    <img src="./assets/images/Others/loader-img.gif" alt="">
+  </div>
+
+  <!--
+    - main container
+  -->
+  <div class="popup" id="popup-1">
+
+    <div class="overlay"></div>
+    <div class="contact-container">
+      <div class="contact-close-btn" onclick="togglepopup()">&times;</div>
+
+      <span class="big-circle"></span>
+
+      <div class="contactus-form">
+        <div class="contact-info">
+          <h3 class="contact=title">Let's get in touch</h3>
+          <p class="contact-text">
+            Suvidha Mahila Mandal is a non-profit organization working to impart
+            education among the financially challenged sections to help them
+            realize parity in education and strength of little minds in building
+            a promising future.
+          </p>
+
+          <div class="info">
+            <div class="contact-information">
+              <img src="img/location.png" class="contact-icon" alt="" />
+              <p>H.No. 1951, W.N.4, Khaperkheda, Saoner, Nagpur</p>
+            </div>
+            <div class="contact-information">
+              <img src="img/email.png" class="contact-icon" alt="" />
+              <p>info@suvidhafoundationedutech.org</p>
+            </div>
+            <div class="contact-information">
+              <img src="img/phone.png" class="contact-icon" alt="" />
+              <p>7020044091</p>
+            </div>
+          </div>
+
+          <div class="contact-social-media">
+            <p>Connect with us :</p>
+            <div class="contact-social-icons">
+              <a href="https://www.facebook.com/suvidhamahilamandal/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://instagram.com/suvidha_mahila_mandal?igshid=YmMyMTA2M2Y" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="datasubmit.php" method="POST" autocomplete="off">
+            <h3 class="contact-title">Contact us</h3>
+            <div class="contact-input-container">
+              <input type="text" name="name" class="contact-input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="contact-input-container">
+              <input type="email" name="email" class="contact-input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="contact-input-container">
+              <input type="tel" name="phone" class="contact-input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="contact-input-container">
+              <input type="text" name="resume" class="contact-input" />
+              <label for="">Resume Link</label>
+              <span>Resume link</span>
+            </div>
+            <div class="contact-input-container textarea">
+              <textarea name="message" class="contact-input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+
+            <input type="submit" value="Send" class="contact-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <!-- ------------------------------- header -------------------------------- -->
+
+    <header>
+      <div class="header-1">
+
+        <div class="share">
+          <span> Follow Us : </span>
+          <a href="https://www.facebook.com/suvidhamahilamandal/" class="fab fa-facebook-f" target="_blank"></a>
+          <a href="https://instagram.com/suvidha_mahila_mandal?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"
+            target="_blank"></a>
+          <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" class="fab fa-linkedin"
+            target="_blank"></a>
+        </div>
+
+        <div class="call">
+          <span> Call Us : </span>
+          <a href="#">7020044091</a>
+        </div>
+
+      </div>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <img src="./assets/images/Others/suvidha_logo.jpg" alt="Suvidha Logo" />
+        </div>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="home.html">Home</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="about.html">About Us</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="program.html">Programs</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="events.html">Our Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+
+        <button class="btn" id="helloclick" onclick="togglepopup()">
+          <p class="btn-text">CONTACT US</p>
+          <span class="square"></span>
+        </button>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ------------------------------ about top ------------------------------ -->
+
+    <section class="abouttop" id="abouttop">
+      <div class="abouttop-left text-align-center">
+        <p class="section-subtitle">Welcome To Suvidha Foundation</p>
+
+        <h1 class="main-heading">ABOUT US</h1>
+        <a class="section-text ref-text inline-block" href="home.html">Home&nbsp;</a>
+        <p class="section-text inline-block">>&nbsp;AboutUs</p>
+        <div class="about-top">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------------------------- about section ---------------------------- -->
+
+    <section class="about" id="about">
+      <div class="about-left">
+        <div class="img-box">
+          <video src="./assets/video/suvidha_2.mp4" autoplay muted class="about-img"></video>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <p class="section-subtitle">About Us</p>
+
+        <h2 class="section-title">(Suvidha Mahila Mandal)</h2>
+
+        <p class="section-text">
+          Suvidha Mahila Mandal is a non-profit organization working to
+          impart education among the financially challenged sections to help
+          them realize parity in education and strength of little minds in
+          building a promising future. The organization has provisions of
+          student internships, student mentorship and the scope to
+          volunteer. Through these programmes, the organization aims to
+          achieve the vision of imparting innovative education that stays
+          with the students forever and equip them for the unforeseen
+          future.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-----------------------#TESTIMONIAL SECTION------------------------>
+
+
+    <div class="hero">
+      <h1>TESTIMONIALS</h1>
+      <div class="review-box">
+        <div id="slide">
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/mrinal.jpeg">
+              <div>
+                <h3>Mrinal Gupta</h3>
+                <p>Web Developer Intern</p>
+              </div>
+            </div>
+            <p>It's my great pleasure to be a part of Suvidha Foundation.
+              Suvidha Foundation have good staff and management. Most enjoyable part was team were
+              very good. This foundation really helped me to improve my skills and knowledge. I'm
+              very thankful to Suvidha foundation that they provided me this opportunity.
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/sachin1.jpg">
+              <div>
+                <h3>Sachin Singh</h3>
+                <p>Web Developer Intern</p>
+              </div>
+            </div>
+            <p>It's my pleasure to be a part of Suvidha Foundation. Working with Suvidha Foundation has been a wonderful
+              and great experience for me. I learned a lot of things and skills which helps me in future and everyone is
+              very cooperative and guided me a lot. Suvidha Foundation is doing a great job in the field of education
+              and helping the women which is the best thing I like about it and also for the betterment of the society.
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/davinder.jpeg">
+              <div>
+                <h3>Davinder Kumar</h3>
+                <p>Web Developer Intern</p>
+              </div>
+            </div>
+            <p>My Internship at (Suvidha Foundation) has given me the opportunity to see so much more about the Web
+              Development than I am able to learn in the college lectures. I have developed many skills and have a much
+              greater concept of what to expect after college and I have received is the knowledge that I actually enjoy
+              doing
+              what it is I have
+              been studying for.</p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/devesh.jpeg">
+              <div>
+                <h3>Devesh Kumar Lihare</h3>
+                <p>Web Developer Intern</p>
+              </div>
+            </div>
+            <p>Suvidha Foundation is an NGO which imparts education for children who can't afford the luxury of
+              education. It is a mahila mandal , stretching their arms to every needy soul. Suvidha Foundation in
+              collaboration with Code Karo Yaroon has reached many people and helped all. Suvidha Foundation, also
+              provides with many internships for the starters in different fields.</p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/M.jpeg">
+              <div>
+                <h3>Mayank</h3>
+                <p>Web Developer Intern</p>
+              </div>
+            </div>
+            <p>Everyone here in the team is always there to help. There are a lot of things to learn. Every new
+              assignment happens to be unique in its own way which grooms you to be all-rounder leader. A happening
+              place and environment to work in.</p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/MP.jpeg">
+              <div>
+                <h3>Manthan Patel</h3>
+                <p>Web Developer Intern</p>
+              </div>
+            </div>
+            <p>Suvidha foundation is one of the best foundation i've worked with. I am glad that i got to work in this
+              wonderful foundation and best thing about them is their scope or view.</p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/MK.jpeg">
+              <div>
+                <h3>Muskan Kumari</h3>
+                <p>Human Resource Management Intern</p>
+              </div>
+            </div>
+            <p>It was my pleasure to be a part of Suvidha Foundation. I have gained skill and knowledge than I expected
+              and for this I'm filled with gratitude and respect towards this organization. Suvidha Foundation have good
+              staff management, they taught me about role of HR and also guided me what skills are needed in this field
+              and all this helped me a lot. I'm very thankful to Suvidha Foundation that they provided me this
+              opportunity.</p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/MY.jpeg">
+              <div>
+                <h3>Muskan Yadav</h3>
+                <p>Human Resource Management Intern</p>
+              </div>
+            </div>
+            <p>I am truly grateful to be a part of Suvidha Foundation. From the very first day of internship I have
+              enjoyed my journey to the fullest and quite sure that further it will be more exciting. This foundation
+              really helped me to improve my skills and knowledge. I had the opportunity to learn team work , talking to
+              new people and different activities under Human Resource. </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/AB.jpeg">
+              <div>
+                <h3>Alakananda Borthakur</h3>
+                <p>Human Resource Management Intern</p>
+              </div>
+            </div>
+            <p>It has been a great honour to be a part of Suvidha Foundation. Suvidha foundation has a very good staff
+              and management. The best part is the amiable team. We have a small team but since all the team members are
+              very cooperative, so it is fun working here. The most important part of this NGO is the environment in
+              which we get to learn such a variety of things and also being very friendly is its forte.</p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="assets/images/testimonials/prerna.jpeg">
+              <div>
+                <h3>Prerna Singh</h3>
+                <p>Human Resource Management Intern</p>
+              </div>
+            </div>
+            <p>Suvidha Foundation is working for such a great motive i.e. to educate children of weaker section by
+              giving them guidance and free education. I always wanted to be a part of such an organization. I feel
+              blessed to work here. Thank you suvidha foundation for letting me be a part of such a great organization.
+            </p>
+          </div>
+
+
+        </div>
+        <div class="sidebar">
+          <img src="assets/images/testimonials/up-arrow.png" id="upArrow">
+          <img src="assets/images/testimonials/down-arrow.png" id="downArrow">
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      - #OUR MOTIVE SECTION
+      -->
+
+    <section class="vision" id="motive">
+      <p class="section-subtitle">ABOUT OUR MOTIVE</p>
+
+      <div class="motive">
+        <div class="box">
+          <div class="icon">01</div>
+          <div class="content">
+            <h3>Our Vision</h3>
+            <p>To build Next Generation Entrepreneur, by providing them a Skill-Based Education.</p>
+            <p>To Provide Internship, Training And Workshops and Quality Education All Over The World..</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon">02</div>
+          <div class="content">
+            <h3>Our Mission</h3>
+            <p>To Inspire Students, help them Innovate and let them Integrate to build the next generation
+              humankind.</p>
+            <p>To Run Food Donation And Awareness Campaign In Rural Region.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon">03</div>
+          <div class="content">
+            <h3>Our Values</h3>
+            <p>To Let People, make changes together and to work consistently through every challenge. </p>
+            <p> To Provide Proper Training to everyone
+              and to be excellent in every course provide to all</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ------------------------------ #CONTACT ------------------------------- -->
+
+    <section class="contact">
+      <div class="contact-card" id="contact">
+        <h2>Register For Free Online Coding Webinar</h2>
+
+        <button class="btn btn-primary">
+          <p class="btn-text">Register Now</p>
+          <span class="square"></span>
+        </button>
+      </div>
+    </section>
+    </main>
+
+    <!-- GO TO TOP -->
+
+    <div class="scroll-btn">
+      <i class="fas fa-arrow-circle-up"></i>
+    </div>
+
+
+    <!-- ------------------------------- FOOTER -------------------------------- -->
+
+
+    <footer>
+      <div class="footer-grid">
+        <div class="grid-item">
+          <div class="footer-logo">
+            <img src="./assets/images/Others/slogo_footer.png" alt="Suvidha Foundation" />
+          </div>
+
+          <p class="footer-text">
+            Suvidha Mahila Mandal is a non-profit organization working to
+            impart education among the financially challenged sections to help
+            them realize parity in education and strength of little minds in
+            building a promising future. The organization has provisions of
+            student internships, student mentorship and the scope to
+            volunteer. Through these programmes, the organization aims to
+            achieve the vision of imparting innovative education that stays
+            with the students forever and equip them for the unforeseen
+            future.
+          </p>
+
+          <div class="social-link">
+            <a href="https://www.facebook.com/suvidhamahilamandal/" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://instagram.com/suvidha_mahila_mandal?igshid=YmMyMTA2M2Y=" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <ul class="grid-item">
+          <h4 class="item-heading">Our Links</h4>
+
+          <li class="list-item">
+            <a href="home.html">Home</a>
+          </li>
+
+          <li class="list-item">
+            <a href="about.html">About Us</a>
+          </li>
+
+          <li class="list-item">
+            <a href="program.html">Programs</a>
+          </li>
+
+          <li class="list-item">
+            <a href="events.html">Events</a>
+          </li>
+
+          <li class="list-item">
+            <a href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+
+        <ul class="grid-item">
+          <h4 class="item-heading">Quick Links</h4>
+
+          <li class="list-item">
+            <a href="#">Code Of Conduct</a>
+          </li>
+
+          <li class="list-item">
+            <a href="privacypolicy.html">Privacy Policy</a>
+          </li>
+
+          <li class="list-item">
+            <a href="#">Terms & Condition</a>
+          </li>
+        </ul>
+
+        <div class="grid-item">
+          <h4 class="item-heading">Contact Us</h4>
+
+          <div class="wrapper">
+            <input type="text" name="subscribe" placeholder="Email Address" />
+
+            <button class="send-btn">
+              <ion-icon name="paper-plane"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Copyright © 2022 <a href="#">Suvidha Foundation</a>. All rights
+        reserved.
+      </p>
+    </footer>
+  </div>
+
+  <!-- -------------------------- contact us popup --------------------------- -->
+
+  <script>
+    document.getElementById("helloclick").addEventListener("click", function () {
+      document.querySelector(".contact-container").style.display = "flex";
+      document.querySelector(".contact-container").style.position = "fixed";
+    })
+    document.querySelector(".contact-close-btn").addEventListener("click", function () {
+      document.querySelector(".contact-container").style.display = "none";
+      document.querySelector(".container").style.display = "block";
+    })
+  </script>
+
+  <!-- --------------------------- testimonials js --------------------------- -->
+
+  <script>
+    var slide = document.getElementById("slide");
+    var upArrow = document.getElementById("upArrow");
+    var downArrow = document.getElementById("downArrow");
+
+    let x = 0;
+    upArrow.onclick = function () {
+      if (x > "-2900") {
+        x = x - 350;
+        slide.style.top = x + "px";
+      }
+    }
+
+    downArrow.onclick = function () {
+      if (x < 0) {
+        x = x + 350;
+        slide.style.top = x + "px";
+      }
+    }
+  </script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/app.js"></script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/loader.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+  <!--
+    -  link
+  -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</body>
+
+</html>
